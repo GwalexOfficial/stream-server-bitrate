@@ -110,7 +110,8 @@
       const elrtt = document.getElementById('rtt');
 
       if (!bitrate) {
-        el.innerHTML = null;
+        el.innerHTML = "NO SIGNAL";
+        el.style.color = 'red';
         elrtt.innerHTML = null;
         return;
       }
